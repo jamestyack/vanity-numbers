@@ -47,9 +47,9 @@ public class VanityPhoneNumbers {
 	}
 	
 	/**
-	 * @param results the list of vanity numbers
-	 * @param lettersForEachDigit - the structure holding list of  number -> letters
-	 * @param stackOfLetters - a stack to hold all letters up to last letter - added to on each recursive call
+	 * @param results a list of results that is added to
+	 * @param lettersForEachDigit
+	 * @param stackOfLetters a stack to hold all letters up to last letter; added to on each recursive call
 	 * @param digitPosition current position in the phone number
 	 * @param result this list of vanity numbers
 	 */
