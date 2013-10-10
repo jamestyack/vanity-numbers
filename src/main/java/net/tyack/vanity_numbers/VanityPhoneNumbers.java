@@ -61,7 +61,7 @@ public class VanityPhoneNumbers {
 				results.add(format(stackOfLetters) + thisLevelLetters.get(i));
 			}
 		} else {
-			// not at last number, iterate over the chars and print
+			// not at last number, iterate over the chars at this number, pushing each onto stack and recurse
 			for (int i = 0; i < thisLevelLetters.size(); i++) {
 				stackOfLetters.push(thisLevelLetters.get(i));
 				getVanityNumberRecursive(results, lettersForEachDigit, stackOfLetters, digitPosition + 1);
